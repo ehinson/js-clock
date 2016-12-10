@@ -10,8 +10,36 @@ html, body{
   padding: 0;
   background-color: #000000;
   font-family: 'Quicksand', sans-serif;
+  text-align: center;
 }
 
 .clock {
   border-radius: 50%;
+  background-color: red;
+  overflow: auto;
+  width: 330px;
+  height: 330px;
+  position:absolute;
+  z-index: 1;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  margin: -165px 0 0 -165px;
+}
+.clock-face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.hand{
+  width: 50%;
+  position: absolute;
+  background-color: black;
+  height: 6px;
+  z-index: 200px;
+  top: 50%;
 }
