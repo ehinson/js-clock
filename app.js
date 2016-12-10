@@ -23,11 +23,9 @@ function toHex(n){
 
 function setDate() {
   const now = new Date();
-  var seconds = addZero(now.getSeconds());
-  var minutes = addZero(now.getMinutes());
-  var hours = addZero(now.getHours());
-
-
+  const seconds = addZero(now.getSeconds());
+  const minutes = addZero(now.getMinutes());
+  const hours = addZero(now.getHours());
 
   const secondsDegrees = (seconds * 6 )+ 90;
   const minutesDegrees = (minutes * 6 )+ 90;
@@ -41,12 +39,9 @@ function setDate() {
     hourDigital.innerHTML = hours + ':' ;
   }
 
-
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
-
-  console.log(toHex(hours));
 
   document.body.style.backgroundColor = '#' + toHex(hours)+ toHex(minutes)+ toHex(seconds);
 }
