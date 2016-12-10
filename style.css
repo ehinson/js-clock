@@ -40,10 +40,19 @@ html, body{
   position: absolute;
   background-color: black;
   height: 6px;
-  z-index: 200px;
+  z-index: 200;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
+
+}
+
+.seconds{
+  z-index: 300;
   transition: all 0.05s;
-  transition-timing-function: cubic-bezier();
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.minutes{
+  z-index: 250;
 }
