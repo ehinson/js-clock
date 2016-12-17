@@ -23,13 +23,15 @@ function toHex(n){
 
 function setDate() {
   const now = new Date();
-  const seconds = addZero(now.getSeconds());
-  const minutes = addZero(now.getMinutes());
-  const hours = addZero(now.getHours());
 
+  const seconds = addZero(now.getSeconds());
   const secondsDegrees = (seconds * 6 )+ 90;
+
+  const minutes = addZero(now.getMinutes());
   const minutesDegrees = (minutes * 6 )+ 90;
-  const hoursDegrees = (hours * 30 )+ 90;
+
+  const hours = addZero(now.getHours());
+  const hoursDegrees = (hours * 30  )+ 90;
 
   if (hours == 00){
     hourDigital.innerHTML = '12:';
