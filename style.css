@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Text+Me+One');
 
 * {
   box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #000000;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Text Me One', sans-serif;
   text-align: center;
   color: white;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .clock {
@@ -20,7 +26,7 @@ html, body{
   overflow: auto;
   width: 330px;
   height: 330px;
-  position:absolute;
+  position: absolute;
   z-index: 1;
   padding: 15px;
   top: 50%;
@@ -37,7 +43,7 @@ html, body{
   border-radius: 50%;
 }
 
-.hand{
+.hand {
   width: 50%;
   position: absolute;
   background-color: black;
@@ -47,20 +53,26 @@ html, body{
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: translateX(3px);
-
 }
 
-.seconds{
+.seconds {
   z-index: 300;
   /*transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
 }
 
-.minutes{
+.minutes {
   z-index: 250;
 }
 
-h1{
-  margin: 0 auto;
-  padding: 30px 0;
+.digital {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .digital {
+    font-size: 1.5rem;
+    position: relative;
+    top: 50%;
+    z-index: 300;
+  }
 }

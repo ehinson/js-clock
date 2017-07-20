@@ -7,12 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "open index.html"
   },
-  "keywords": [
-    "css",
-    "javascript",
-    "animated",
-    "clock"
-  ],
-  "author": "Erin (Q.) Hinson",
-  "license": "MIT"
+  "keywords": ["css", "javascript", "animated", "clock"],
+  "author": "Erin (Q.)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehinson/js-clock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ehinson/js-clock/issues"
+  },
+  "homepage": "https://ehinson.github.io/js-clock"
 }
