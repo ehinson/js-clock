@@ -43,11 +43,5 @@ function setDate() {
 
   document.body.style.backgroundColor = '#' + toHex(hours * 24) + toHex(minutes) + toHex(seconds);
 }
-function setTime() {
-  return 5000;
-}
 
 setInterval(setDate, 1000);
-setTimeout(function() {
-  alert('Hello');
-}, setTime());
